@@ -102,7 +102,7 @@ class listingController extends Controller
     {
 
         // dd($listing);
-        if ($listing->id != auth()->id()) {
+        if ($listing->user_id != auth()->id()) {
             abort(403, 'unauthorized action');
         }
         // dd('$listing');
@@ -125,7 +125,7 @@ class listingController extends Controller
             $reqFields['logo'] = $request->file('logo')->store('logo', 'public');
         }
         $listing->update($reqFields);
-        return back()->with('message', 'successfully created');
+        return redirect('/listings/manage')->with('message', 'successfully updated');
 
     }
 

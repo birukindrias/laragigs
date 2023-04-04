@@ -13,14 +13,14 @@
 
 
              @else
-               <a href="register.html" class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black">Sign Up to List a Gig</a>
+               <a href="register" class="inline-block border-2 border-white text-white py-2 px-4 rounded-xl uppercase mt-2 hover:text-black hover:border-black">Sign Up to List a Gig</a>
 
 @endauth
            </div>
        </div>
    </section>
         <!-- Search -->
-        <form action="">
+        <form action="/">
             <div class="relative border-2 border-gray-100 m-4 rounded-lg">
                 <div class="absolute top-4 left-3">
                     <i class="fa fa-search text-gray-400 z-20 hover:text-gray-500"></i>
